@@ -4,9 +4,10 @@ main {
 }
 
 nav a {
-    color: white;
+    color: rgb(31, 176, 202);
     padding: 10xp;
     display: block;
+    background-color: aqua;
 }
 
 h1 { color: steelblue;}
