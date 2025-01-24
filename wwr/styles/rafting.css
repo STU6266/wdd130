@@ -88,7 +88,7 @@ div h1 {
     background: rgb(255, 255, 255, 0.5);
 }
 
-aside {
+article {
     background-color: var(--primary-color);
     padding: 190px 47.28% ;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
@@ -97,7 +97,7 @@ aside {
     
 }
 
-aside img {
+article img {
     position: absolute;
     top: 45.5%;
     left: 83%;
@@ -110,7 +110,7 @@ aside img {
     
 }
 
-aside p {
+article p {
     display: block;
     width: 60%;
     height: auto;
