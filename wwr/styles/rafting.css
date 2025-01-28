@@ -10,7 +10,7 @@
     
 
     font-family: var(--paragraph-font);
-    max-width: auto;
+    width: auto;
     padding: 20px;
 
 }
