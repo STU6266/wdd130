@@ -200,8 +200,8 @@ section:nth-of-type(2) figcaption {
 
 footer {
     display: flex;
-    justify-content: space-between; /* Platz zwischen den Elementen im Footer */
-    align-items: center; /* Vertikale Zentrierung der Elemente */
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     background: var(--accent2-color);
 }
@@ -211,27 +211,27 @@ footer p {
     margin: 0;
     position: relative;
     left: 35%;
-    align-self: center; /* Vertikale Zentrierung des Textes */
+    align-self: center;
 }
 
-footer nav.sociallinks {
+footer nav {
     display: flex;
-    justify-content: flex-end; /* Rechter Rand der Links */
+    justify-content: flex-end;
 }
 
-footer nav.sociallinks a {
-    display: flex; /* Nötig, um Flex-Funktion zu inhalten */
-    align-items: center; /* Vertikale Zentrierung der Links */
+footer nav a {
+    display: flex;
+    align-items: center;
     margin: 0 0.5rem;
     text-decoration: none;
 }
 
-footer nav.sociallinks img {
+footer nav img {
     width: 30px;
-    transition: transform 0.3s ease; /* Glatter Hover-Effekt */
+    transition: transform 0.3s ease;
 }
 
-footer nav.sociallinks img:hover {
+footer nav img:hover {
     transform: scale(1.1);
 }
 
