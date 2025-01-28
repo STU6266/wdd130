@@ -16,18 +16,32 @@
 }
 /* Header */
 header {
-    display: flex;
+    display:grid;
+    grid-template-columns: 1fr 3fr 2fr;
     align-items: center;
-    justify-content: space-between;
+    padding: 10px;
     background: var(--accent2-color);
-    padding: 1rem 2rem;
+   
 }
 
 header img {
     max-width: 150px;
-
+    border-radius: 100%;
+    position: relative;
+    left: 50%
 }
-
+header h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 500%;
+    margin: 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    gap: 70px;
+    font-size: 120%
+}
 nav a {
     text-decoration: none;
     color: var(--accent1-color);
@@ -81,16 +95,16 @@ div img {
 div h1 {
     color: var(--secondary-color);
     font-family: var(--heading-font);
-    font-size: 450%;
+    font-size: 235%;
     position: absolute;
-    top: 30%;
-    padding: 1px 39.35%;
+    top: 40%;
+    padding: 1px 35%;
     background: rgb(255, 255, 255, 0.5);
 }
 
 article {
     background-color: var(--primary-color);
-    padding: 190px 47.28% ;
+    padding: 190px 46.55% ;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
     position: absolute;
     top: 65%;
@@ -100,7 +114,7 @@ article {
 article img {
     position: absolute;
     top: 45.5%;
-    left: 83%;
+    left: 80%;
     transform: translate(-50%, -50%);
     width: 500px;
     height: auto;
@@ -112,7 +126,7 @@ article img {
 
 article p {
     display: block;
-    width: 60%;
+    width: 50%;
     height: auto;
     font-size: 140%;
     position: absolute;
@@ -124,48 +138,100 @@ article p {
    
 }
 
-section {
-    margin: 2rem 0;
+section:nth-of-type(1) {
+    display:grid;
+    grid-template-rows: 2fr 3fr 2fr;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-rows: 30% 50%;
+    column-gap: 3%;
+    
+}
+section:nth-of-type(1) p {
+    grid-row: 2;
 }
 
-section img {
-    margin: 1rem 0;
+section:nth-of-type(1) img {
+    grid-row: 2;
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+section:nth-of-type(1) h2 {
+    grid-row: 1;
+    position: relative;
+    left: 130%;
+    font-family: var(--heading-font);
+    font-size: 300% 
+    
+}
+
+section:nth-of-type(2) {
+    
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+section:nth-of-type(2) figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-of-type(2) h2 {
+    grid-column: 1/-1;;
+    text-align: center;
+    font-size: 50px;
+}
+section:nth-of-type(2) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}  
+    
+section:nth-of-type(2) figcaption {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 0.8em;
+    margin-top: 5px;
 }
 
 /* Footer */
+
+
 footer {
-    text-align: center;
-    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between; /* Platz zwischen den Elementen im Footer */
+    align-items: center; /* Vertikale Zentrierung der Elemente */
+    padding: 1rem;
     background: var(--accent2-color);
-    color: var(--accent1-color);
 }
 
 footer p {
+    color: var(--accent1-color);
     margin: 0;
-
+    position: relative;
+    left: 35%;
+    align-self: center; /* Vertikale Zentrierung des Textes */
 }
 
-a {
+footer nav.sociallinks {
+    display: flex;
+    justify-content: flex-end; /* Rechter Rand der Links */
+}
+
+footer nav.sociallinks a {
+    display: flex; /* Nötig, um Flex-Funktion zu inhalten */
+    align-items: center; /* Vertikale Zentrierung der Links */
+    margin: 0 0.5rem;
     text-decoration: none;
 }
-footer nav a img {
+
+footer nav.sociallinks img {
     width: 30px;
-    margin: 0 0.5rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Glatter Hover-Effekt */
 }
 
-footer nav a img:hover {
+footer nav.sociallinks img:hover {
     transform: scale(1.1);
 }
-
-
-nav.sociallinks {
-    display: flex;
-    justify-content: center;
-}
-
-nav.sociallinks a {
-    padding: 0.5rem;
-}
-
 
