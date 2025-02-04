@@ -98,18 +98,16 @@ section#contact-section {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
-    background: linear-gradient(135deg, var(--accent1-color), var(--accent2-color));
+    background-color: var(--accent1-color);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-main h1 {
+h1 {
     color: var(--secondary-color);
-    grid-column: 1 / -1;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: var(--heading-font);
-    text-shadow: 2px 2px #ffffff;
 }
 
 figure[id^="contact-figure"] {
@@ -118,14 +116,8 @@ figure[id^="contact-figure"] {
     align-items: center;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-figure[id^="contact-figure"]:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 figure[id^="contact-figure"] img {
@@ -138,14 +130,13 @@ figure[id^="contact-figure"] img {
 
 figure[id^="contact-figure"] figcaption {
     font-family: var(--heading-font);
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--secondary-color);
 }
 
 p {
     font-family: var(--paragraph-font);
     color: #333;
-    line-height: 1.6;
     margin: 10px 0;
 }
 
