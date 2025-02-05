@@ -56,7 +56,7 @@ nav a:hover {
 }
 
 body {
-    font-family: 'Opensans', sans-serif;
+    font-family: var(--paragraph-font);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -185,7 +185,7 @@ form {
 }
 
 @media only screen and (max-width: 768px) {
-    figure#contact-figure {
+    figure[id^="contact-figure"] {
         width: 100%;
         margin-right: 0;
     }
