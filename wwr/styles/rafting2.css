@@ -8,9 +8,6 @@
     --heading-font: "Funnel Display", sans-serif;
     --paragraph-font: "Open Sans", sans-serif;
     
-
-   
-
 }
 /* Header */
 header {
@@ -60,8 +57,6 @@ body {
     box-sizing: border-box;
     background: var(--accent1-color);
     color: black;
-
-
 }
 
 
@@ -104,7 +99,7 @@ section#contact-section {
 }
 
 h1 {
-    color: var(--secondary-color);
+    color: var(--accent2-color);
     text-align: center;
     font-size: 2rem;
     font-family: var(--heading-font);
@@ -181,7 +176,7 @@ form {
 }
 
 .form-group button:hover {
-    background: #575757;
+    background: var(--primary-color);
 }
 
 @media only screen and (max-width: 768px) {
@@ -191,14 +186,7 @@ form {
     }
 }
 
-
-
-
-
-
 /* Footer */
-
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -207,24 +195,27 @@ footer {
     background: var(--accent2-color);
 }
 
+footer a {
+    color: var(--accent1-color);
+    text-decoration: none;
+}
+
 footer p {
     color: var(--accent1-color);
     margin: 0;
-    position: relative;
-    left: 35%;
-    align-self: center;
+    flex: 1; 
+    text-align: center;
 }
 
 footer nav {
     display: flex;
     justify-content: flex-end;
+    
 }
 
 footer nav a {
     display: flex;
     align-items: center;
-    margin: 0 0.5rem;
-    text-decoration: none;
 }
 
 footer nav img {
@@ -235,4 +226,5 @@ footer nav img {
 footer nav img:hover {
     transform: scale(1.1);
 }
+
 
