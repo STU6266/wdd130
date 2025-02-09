@@ -55,7 +55,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: var(--accent1-color);
+    background: lightgray;
     color: black;
 }
 main {
@@ -108,7 +108,7 @@ iframe {
     height: 450px;
     margin-bottom: 20px;
 }
-/* Contact Section Styling */
+
 section#contact-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
