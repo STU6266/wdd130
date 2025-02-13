@@ -44,26 +44,36 @@
                 <p>Enjoy breathtaking views while paddling through pristine waters. Our rafting routes take you through some of the most stunning landscapes.</p>
             </div>
         </section>
-        <div class="form-container">
-            <form>
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Submit</button>
-        </div>
         <div class="cta">
             <a href="trips.html" class="cta-button">Explore Our Trips</a>
         </div>
+        <div class="form-container">
+            <form action="newsletter-signup.php" method="post">
+                <fieldset>
+                    <legend>Sign up for our Newsletter</legend>
+        
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>                         
+        
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>      
+                    <div class="form-group">
+                        <button type="submit">Sign Up Now</button>
+                    </div>  
+                </fieldset>
+            </form>
+        </div>
+        
+       
    
     </main>
     <footer>
